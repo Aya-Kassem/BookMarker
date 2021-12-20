@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/index.css" rel="stylesheet">
+    <title>JAVASCRIPT ASSIGNEMET-3</title>
+</head>
+<body>
+
+    <div class="container py-5">
+        <h1 class="mt-4 border-bottom pb-5">Bookmarker</h1>
+        <div class="row">
+            <div class="col-11 py-5 text-center bookmarker-card">
+                <h2 class="mb-4">Bookmark your favorite sites</h2>
+
+                <label class="form-label ">Site Name</label>
+                <input id="nameInput" class="form-control form-control-sm w-75 mx-auto" placeholder="Bookmarker Name">
+                <div class="text-center alert p-0" id="name-alert">
+                    <p class="my-1">Name is required</p>
+                </div>
+               
+                <label class="form-label mt-4">Site URL</label>
+                <input id="urlInput" class="form-control form-control-sm w-75 mx-auto" placeholder="Website URL">
+                <div class="text-center alert p-0" id="url-alert">
+                    <p class="my-1">URL Field is required</p>
+                </div>
+
+                <button onclick="siteMade()" class="btn blue-btn rounded mt-3" type="submit">Submit</button>
+            </div>
+        </div>
+        <div class="row" id="bookmarker-parent"></div>
+        <footer class="border-top pt-3">
+            <p>© 2019 Bookmarker Inc.</p>
+        </footer>
+    </div>
+
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
